@@ -906,7 +906,7 @@ int main(int argc, const char *argv[])
               if (txp + 2 + strlen(i) + strlen(m) >= tx + sizeof(tx))
                 break;
               *txp++ = RADIUS_AVP_FRAMED_IPV6_ROUTE;
-              *txp++ = strlen(i) + strlen(m);
+              *txp++ = 2 + strlen(i) + strlen(m);
               strcpy((char *)txp, i);
               txp += strlen(i);
               strcpy((char *)txp, m);
