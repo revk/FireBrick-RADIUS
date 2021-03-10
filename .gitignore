@@ -1,4 +1,5 @@
 *~
 *.o
 fb-radius-acct
-fb-radius.auth
+fb-radius-auth
+fb-radius-msg
